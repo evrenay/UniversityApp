@@ -1,0 +1,2 @@
+include ':app', ':repository', ':core', ':features:detail', ':features:place', ':features:university', ':features:authentication'
+rootProject.name = 'University App'

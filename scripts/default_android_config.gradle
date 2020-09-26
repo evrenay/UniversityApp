@@ -1,0 +1,38 @@
+apply from: "$rootProject.projectDir/scripts/default_dependencies.gradle"
+
+android {
+    compileSdkVersion versions.compileSdkVersion
+    buildToolsVersion versions.buildToolsVersion
+
+    defaultConfig {
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    testOptions.unitTests.all {
+        jvmArgs "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap"
+    }
+
+    flavorDimensions 'versionCode'
+    productFlavors {
+        def BASE_URL = "BASE_URL"
+        def CLIENT_ID = "CLIENT_ID"
+        def CLIENT_SECRET = "CLIENT_SECRET"
+
+        dev {
+            buildConfigField "String", BASE_URL, '"http://193.35.200.182:8080/"'
+            buildConfigField "String", CLIENT_ID, '"testjwtclientid"'
+            buildConfigField "String", CLIENT_SECRET, '"XY7kmzoNzl100"'
+        }
+
+
+        live {
+            buildConfigField "String", BASE_URL, '""'
+            buildConfigField "String", CLIENT_ID, '"testjwtclientid"'
+            buildConfigField "String", CLIENT_SECRET, '"XY7kmzoNzl100"'
+        }
+    }
+}

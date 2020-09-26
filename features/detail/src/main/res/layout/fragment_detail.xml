@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+		<variable
+			name="viewModel"
+			type="com.evren.detail.ui.DetailViewModel" />
+	</data>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+		<include
+			android:id="@+id/viewTitle"
+			layout="@layout/app_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			app:content="@{viewModel.name}"
+			app:isVisibleBack="@{true}"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+		<androidx.viewpager2.widget.ViewPager2
+			android:id="@+id/viewpager"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:clipChildren="false"
+			android:clipToPadding="false"
+			android:orientation="vertical"
+			app:layout_constraintBottom_toTopOf="@+id/relLayDesc"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/viewTitle"
+			app:layout_constraintVertical_weight="4" />
+		<com.google.android.material.tabs.TabLayout
+			android:id="@+id/tabLayout"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:background="@android:color/transparent"
+			app:layout_constraintBottom_toBottomOf="@+id/viewpager"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:tabBackground="@drawable/tab_selector"
+			app:tabGravity="center"
+			app:tabIndicatorHeight="0dp" />
+
+		<RelativeLayout
+			android:id="@+id/relLayDesc"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:background="@color/secondaryLightColor"
+			app:layout_constraintTop_toBottomOf="@+id/viewpager"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintBottom_toTopOf="@+id/relLay"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintVertical_weight="2" >
+			<TextView
+				android:id="@+id/txtUniName"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="15dp"
+				android:singleLine="true"
+				android:ellipsize="end"
+				android:layout_toStartOf="@+id/txtUniType"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="16sp"
+				android:text="@{viewModel.name}"/>
+			<TextView
+			android:id="@+id/txtUniDesc"
+			android:layout_marginStart="15dp"
+			android:layout_marginTop="10dp"
+			android:maxLines="2"
+			android:ellipsize="end"
+			android:layout_below="@+id/txtUniName"
+			android:layout_width="match_parent"
+			android:layout_toStartOf="@+id/txtUniType"
+			android:layout_height="wrap_content"
+			android:textSize="14sp"
+			android:text="@{viewModel.description}"/>
+			<TextView
+				android:id="@+id/txtUniType"
+				android:layout_marginStart="15dp"
+				android:layout_marginTop="10dp"
+				android:singleLine="true"
+				android:layout_marginEnd="5dp"
+				android:ellipsize="end"
+				android:textStyle="bold"
+				android:layout_alignParentEnd="true"
+				android:layout_centerVertical="true"
+				android:layout_below="@+id/txtUniName"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textSize="14sp"
+				android:text="@{viewModel.type}"/>
+
+		</RelativeLayout>
+
+		<RelativeLayout
+			android:id="@+id/relLay"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/relLayDesc"
+			app:layout_constraintVertical_weight="4" >
+			<TextView
+				android:id="@+id/txtTitle"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:textSize="20sp"
+				android:layout_marginTop="10dp"
+				android:text="@string/sections"
+				android:gravity="center"
+				android:textStyle="bold"
+				android:background="@color/secondaryColor"/>
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/recyclerView"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:layout_marginTop="10dp"
+				app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+				android:layout_below="@id/txtTitle"
+				tools:listitem="@layout/departments_item" />
+		</RelativeLayout>
+
+		<include
+			android:id="@+id/progressView"
+			layout="@layout/app_progress"
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			app:layout_constraintBottom_toBottomOf="parent"
+			app:layout_constraintEnd_toEndOf="parent"
+			app:layout_constraintStart_toStartOf="parent"
+			app:layout_constraintTop_toBottomOf="@+id/viewTitle" />
+	</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

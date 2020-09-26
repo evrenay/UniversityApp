@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+	android:id="@+id/rootContainer"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<RelativeLayout
+		android:id="@+id/splashScreen"
+		android:visibility="visible"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+
+
+
+			<com.airbnb.lottie.LottieAnimationView
+				android:id="@+id/animProfile"
+				android:layout_width="200dp"
+				android:layout_height="200dp"
+				app:lottie_autoPlay="true"
+				android:layout_centerVertical="true"
+				android:layout_centerHorizontal="true"
+				app:lottie_loop="true"
+				app:lottie_rawRes="@raw/splash_anim" />
+
+	</RelativeLayout>
+
+	<LinearLayout
+		android:visibility="gone"
+		android:isScrollContainer="false"
+		android:orientation="vertical"
+		android:id="@+id/container"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:context=".MainActivity">
+
+		<FrameLayout
+			android:layout_weight="1"
+			android:layout_width="match_parent"
+			android:layout_height="0dp">
+
+			<FrameLayout
+				android:id="@+id/universityTabContainer"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+				app:layout_constraintTop_toTopOf="parent">
+
+				<fragment
+					android:id="@+id/universityTab"
+					android:name="androidx.navigation.fragment.NavHostFragment"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					app:defaultNavHost="false"/>
+			</FrameLayout>
+
+			<FrameLayout
+				android:id="@+id/placeTabContainer"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:visibility="invisible"
+				app:layout_constraintBottom_toTopOf="@id/bottomNavigationView"
+				app:layout_constraintTop_toTopOf="parent">
+
+				<fragment
+					android:id="@+id/placeTab"
+					android:name="androidx.navigation.fragment.NavHostFragment"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					app:defaultNavHost="false"/>
+			</FrameLayout>
+		</FrameLayout>
+
+
+		<com.google.android.material.bottomnavigation.BottomNavigationView
+			android:layout_gravity="bottom"
+			app:labelVisibilityMode="labeled"
+			android:id="@+id/bottomNavigationView"
+			app:menu="@menu/menu_bottom"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"/>
+
+
+
+
+	</LinearLayout>
+</FrameLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+    <data>
+        <variable name="content" type="java.lang.String"/>
+        <import type="android.view.View" />
+        <variable
+            name="isVisibleBack"
+            type="java.lang.Boolean" />
+    </data>
+    <com.google.android.material.appbar.AppBarLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        >
+        <androidx.appcompat.widget.Toolbar
+            app:contentInsetStart="0dp"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?android:actionBarSize">
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:id="@+id/ivBack"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:visibility="@{isVisibleBack ? View.VISIBLE : View.GONE, default=visible}"
+                    android:layout_alignParentStart="true"
+                    app:srcCompat="@drawable/ic_next"
+                    android:layout_width="60dp"
+                    android:rotation="180"
+                    android:tint="@android:color/black"
+                    android:layout_height="match_parent"/>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:text="@{content}"
+                    android:id="@+id/tvTitle"
+                    tools:text="Title"
+                    android:textSize="16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:textColor="@android:color/black"/>
+            </RelativeLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+</layout>

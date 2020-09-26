@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/nav_university"
+        android:icon="@drawable/ic_school"
+        android:menuCategory="container"
+        android:title="@string/university" />
+
+    <item
+        android:id="@+id/nav_place"
+        android:icon="@drawable/ic_place"
+        android:menuCategory="container"
+        android:title="@string/place" />
+
+</menu>

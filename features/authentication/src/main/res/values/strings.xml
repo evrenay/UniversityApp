@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="login">Üye Giriş</string>
+    <string name="username">Kullanıcı Adı</string>
+    <string name="password">Password</string>
+    <string name="btn_login">Giriş Yap</string>
+    <string name="username_error">Lütfen Kullanıcı Adınızı Giriniz.</string>
+    <string name="password_error">Lütfen Şifrenizi Giriniz.</string>
+    <string name="login_error">Kullanıcı Adı Yada Hatalı Şifre Girdiniz. Lütfen Tekrar Deneyin.</string>
+</resources>

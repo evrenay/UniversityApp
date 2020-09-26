@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!DOCTYPE
+	resources[<!ENTITY deeplinkNamespace "university-app://">
+	<!ENTITY deeplinkDetailPath "&deeplinkNamespace;detail">
+	<!ENTITY paramUniversityId "university-id">
+	<!ENTITY deeplinkAuthenticationPath "&deeplinkNamespace;authentication">
+	]>
+
+<resources>
+	<string name="retry">Retry</string>
+
+	<string name="detail_param_university_id">&paramUniversityId;</string>
+	<string name="detail_deeplink">&deeplinkDetailPath;/{&paramUniversityId;}</string>
+	<string name="detail_uri">&deeplinkDetailPath;/%1d</string>
+	<string name="authentication_uri">&deeplinkAuthenticationPath;/%1d</string>
+	<string name="authentication_deeplink">&deeplinkAuthenticationPath;/{&paramUniversityId;}</string>
+</resources>
