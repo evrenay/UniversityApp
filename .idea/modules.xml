@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/University_App.iml" filepath="$PROJECT_DIR$/.idea/modules/University_App.iml" group="University_App" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="University App/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/authentication/authentication.iml" filepath="$PROJECT_DIR$/.idea/modules/features/authentication/authentication.iml" group="University App/features/authentication" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/core/core.iml" filepath="$PROJECT_DIR$/.idea/modules/core/core.iml" group="University App/core" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/detail/detail.iml" filepath="$PROJECT_DIR$/.idea/modules/features/detail/detail.iml" group="University App/features/detail" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/features.iml" filepath="$PROJECT_DIR$/.idea/modules/features/features.iml" group="University App/features" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/place/place.iml" filepath="$PROJECT_DIR$/.idea/modules/features/place/place.iml" group="University App/features/place" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/repository/repository.iml" filepath="$PROJECT_DIR$/.idea/modules/repository/repository.iml" group="University App/repository" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/features/university/university.iml" filepath="$PROJECT_DIR$/.idea/modules/features/university/university.iml" group="University App/features/university" />
+    </modules>
+  </component>
+</project>
