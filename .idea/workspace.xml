@@ -5,24 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc39936d-6aa1-402b-916f-df5792ff9dc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_jetbrains_kotlin_kotlin_android_extensions_runtime_1_3_50_jar.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/app.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/core/core.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/core/core.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules/features/authentication/authentication.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/features/authentication/authentication.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/core/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/authentication/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/features/authentication/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/detail/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/features/detail/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/place/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/features/place/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/features/university/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/features/university/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/repository/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/repository/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +71,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
-  <component name="RunManager" selected="Gradle.UniversityApp [installDevDebug]">
+  <component name="RunManager" selected="Android App.app">
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -196,22 +180,22 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="379" y="127" key="CommitChangelistDialog2/0.0.1680.1050@0.0.1680.1050" timestamp="1601160556203" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1601162397137">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1601230488914">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1601162397137" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1601162397134">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1601230488914" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1601230488912">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1601162397134" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1601162397132">
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1601230488912" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1601230488911">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1601162397132" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1601162397135">
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1601230488911" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1601230488913">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1601162397135" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1601230488913" />
     <state x="506" y="282" width="667" height="486" key="find.popup" timestamp="1601161791691">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
