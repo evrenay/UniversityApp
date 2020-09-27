@@ -6,6 +6,8 @@ apply plugin: 'kotlin-android-extensions'
 apply from: "$rootProject.projectDir/scripts/default_android_config.gradle"
 apply from: "$rootProject.projectDir/scripts/sources.gradle"
 
+android.buildFeatures.dataBinding = true
+
 android {
     defaultConfig {
         applicationId "com.evren.university"
@@ -16,9 +18,6 @@ android {
 
 
 
-    dataBinding {
-        enabled = true
-    }
 }
 
 dependencies {

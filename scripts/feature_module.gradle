@@ -1,11 +1,8 @@
 apply plugin: "androidx.navigation.safeargs"
 apply from: "$rootProject.projectDir/scripts/module.gradle"
+android.buildFeatures.dataBinding = true
 
-android {
-    dataBinding {
-        enabled = true
-    }
-}
+
 
 dependencies {
     implementation project(':core')

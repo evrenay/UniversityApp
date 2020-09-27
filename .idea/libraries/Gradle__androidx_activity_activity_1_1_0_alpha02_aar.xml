@@ -1,9 +1,9 @@
 <component name="libraryTable">
   <library name="Gradle: androidx.activity:activity:1.1.0-alpha02@aar">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/77c10bfc4c05355402c9484b4babe188/jetified-activity-1.1.0-alpha02/AndroidManifest.xml" />
-      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/77c10bfc4c05355402c9484b4babe188/jetified-activity-1.1.0-alpha02/jars/classes.jar!/" />
-      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/77c10bfc4c05355402c9484b4babe188/jetified-activity-1.1.0-alpha02/res" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/3c9b81830894da8b299122b4b37e4d8f/jetified-activity-1.1.0-alpha02/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/3c9b81830894da8b299122b4b37e4d8f/jetified-activity-1.1.0-alpha02/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../.gradle/caches/transforms-2/files-2.1/3c9b81830894da8b299122b4b37e4d8f/jetified-activity-1.1.0-alpha02/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES>
